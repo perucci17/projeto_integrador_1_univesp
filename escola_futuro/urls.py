@@ -20,5 +20,6 @@ from alunos_empresa import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cemp/',views.cemp )
+    path('cemp/', views.lista)
+    path('', views.index)
 ]

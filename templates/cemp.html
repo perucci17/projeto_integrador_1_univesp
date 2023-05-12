@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "model_page.html" %}
+
+{% block content %}
+      
+
+
+      <ul style = "font-size: 20px">
+            {% for usuario in usuarios %}
+            <li>{{usuario.nome}} - {{usuario.tipo_usuario}} - {{usuario.curso_solicitado}}</li>
+            {%endfor%}
+      </ul>
+{% endblock %}
+
